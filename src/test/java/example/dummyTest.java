@@ -9,15 +9,15 @@ class dummyTest {
 
     @Test
     @Tag("a")
-    public void testPass() {
-        System.out.println("Test PASS example");
+    public void testA() {
+        System.out.println("Test tagged 'A'");
         assertTrue(true);
     }
 
     @Test
-    @Tag("a")
-    public void testFail() {
-        System.out.println("Test FAIL example");
-        assertTrue(false);
+    @Tag("b")
+    public void testB() {
+        System.out.println("Test tagged 'B'");
+        assertTrue(true);
     }
 }
